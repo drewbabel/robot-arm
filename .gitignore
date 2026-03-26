@@ -1,0 +1,7 @@
+.vscode/                                                                                            
+*.json                                                                                              
+*.fasm                                                          
+*.frames
+*.bit
+*.vcd
+*_tb 
