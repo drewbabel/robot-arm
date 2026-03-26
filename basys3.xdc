@@ -23,7 +23,7 @@ set_property -dict { PACKAGE_PIN W13 IOSTANDARD LVCMOS33 } [get_ports {sw[7]}]
 #set_property -dict { PACKAGE_PIN V14 IOSTANDARD LVCMOS33 } [get_ports {led[7]}]
 
 ## Pmod JC (servo outputs)
-set_property -dict { PACKAGE_PIN K17 IOSTANDARD LVCMOS33 } [get_ports {servo[0]}]
+set_property -dict { PACKAGE_PIN K17 IOSTANDARD LVCMOS33 } [get_ports servo]
 #set_property -dict { PACKAGE_PIN M18 IOSTANDARD LVCMOS33 } [get_ports {servo[1]}]
 #set_property -dict { PACKAGE_PIN N17 IOSTANDARD LVCMOS33 } [get_ports {servo[2]}]
 #set_property -dict { PACKAGE_PIN P18 IOSTANDARD LVCMOS33 } [get_ports {servo[3]}]
