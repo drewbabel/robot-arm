@@ -14,6 +14,4 @@
 
     assign pwm_out = (counter < 100000 + (position * 400)) ? 1 : 0;
 
-
-
   endmodule
