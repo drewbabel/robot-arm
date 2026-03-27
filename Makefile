@@ -1,7 +1,7 @@
 # Robot Arm - FPGA Build Flow (Basys 3 / Artix-7)
 
 TOP          = top
-SOURCES      = top.v pwm.v
+SOURCES      = top.v pwm.v clk_div.v spi.v
 
 # Tool paths
 NEXTPNR      = $(HOME)/Documents/code/nextpnr-xilinx/nextpnr-xilinx

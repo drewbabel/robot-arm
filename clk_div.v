@@ -4,14 +4,14 @@ module clk_div (
     output reg sclk
 );
 
-    reg [5:0] counter;
+    reg [12:0] counter;
 
     always @(posedge clk) begin
         if (rst) begin
             sclk <= 0;
             counter <= 0;
         end
-        else if (counter == 49) begin
+        else if (counter == 4999) begin
             sclk <= ~sclk;
             counter <= 0;
         end

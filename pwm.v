@@ -1,9 +1,9 @@
-  module pwm(
-      input clk,
-      input rst,
-      input [7:0] position,
-      output pwm_out
-  );
+module pwm(
+    input clk,
+    input rst,
+    input [7:0] position,
+    output pwm_out
+);
 
     reg [20:0] counter;
 
@@ -14,4 +14,4 @@
 
     assign pwm_out = (counter < 100000 + (position * 400)) ? 1 : 0;
 
-  endmodule
+endmodule
