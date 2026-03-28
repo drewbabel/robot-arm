@@ -22,12 +22,18 @@ set_property -dict { PACKAGE_PIN W13 IOSTANDARD LVCMOS33 } [get_ports {sw[7]}]
 #set_property -dict { PACKAGE_PIN U14 IOSTANDARD LVCMOS33 } [get_ports {led[6]}]
 #set_property -dict { PACKAGE_PIN V14 IOSTANDARD LVCMOS33 } [get_ports {led[7]}]
 
-## Pmod JC
-set_property -dict { PACKAGE_PIN K17 IOSTANDARD LVCMOS33 } [get_ports servo]
+## Pmod JC - SPI + servo 1
+set_property -dict { PACKAGE_PIN K17 IOSTANDARD LVCMOS33 } [get_ports servo1]
 set_property -dict { PACKAGE_PIN M18 IOSTANDARD LVCMOS33 } [get_ports cs]
 set_property -dict { PACKAGE_PIN N17 IOSTANDARD LVCMOS33 } [get_ports mosi]
 set_property -dict { PACKAGE_PIN P18 IOSTANDARD LVCMOS33 } [get_ports miso]
 set_property -dict { PACKAGE_PIN L17 IOSTANDARD LVCMOS33 } [get_ports sclk_out]
+
+## Pmod JB - servos 2-5
+set_property -dict { PACKAGE_PIN A14 IOSTANDARD LVCMOS33 } [get_ports servo2]
+set_property -dict { PACKAGE_PIN A16 IOSTANDARD LVCMOS33 } [get_ports servo3]
+set_property -dict { PACKAGE_PIN B15 IOSTANDARD LVCMOS33 } [get_ports servo4]
+set_property -dict { PACKAGE_PIN B16 IOSTANDARD LVCMOS33 } [get_ports servo5]
 
 ## Reset (center button)
 set_property -dict { PACKAGE_PIN U18 IOSTANDARD LVCMOS33 } [get_ports rst]
